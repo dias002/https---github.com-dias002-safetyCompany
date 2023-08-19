@@ -1,0 +1,130 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "WixDisplay";
+}
+@font-face {
+    font-family: "WixDisplay";
+    src: url(../fonts/Wix_Madefor_Display/WixMadeforDisplay-VariableFont_wght.ttf);
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+// HEADER
+header{
+    height: 100vh;
+    .navbar{
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            width: 7%;
+        }
+        .links{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: rgb(104, 104, 104);
+                    transition: .3s;
+                }
+            }
+        }
+        button{
+            background-color: transparent;
+            padding: 20px 75px 20px 75px;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            -webkit-transition: ease-out .2s;
+            &:hover{
+                background-color: black;
+                color: #fff;
+                transition: ease-in .2s;
+            }
+        }
+    }
+    .header_main{
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .main_title{
+            width: 30%;
+            h1{
+                margin-bottom: 50px;
+            }
+        }
+
+    }
+}
+
+// MAin 
+main{
+    .safety{
+        h1{
+            margin: 100px auto;
+            width: fit-content;
+            font-size: 48px;
+        }
+        .card_sct{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+            .card{
+                position: relative;
+                width: 14%;
+                height: 216px;
+                box-shadow: 0px 2px 18px 0px #2929291A;
+
+                .bg{
+                    background-color: #DDD0A4;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: -1;
+                    text-align: center;
+                    border-radius: 20px;
+                    color: #fff;
+                }
+                .info_part{
+                    background-color: #fff;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    border-radius: 20px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover{
+                        height: 100%;
+                        transition: .5s ease-out;
+                    }
+                    img{
+                        margin: 20px auto;
+                    }
+                }
+
+            }
+        }    
+    }
+}
